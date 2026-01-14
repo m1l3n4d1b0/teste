@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UFJF - Universidade Federal de Juiz de Fora</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <script>
+                function fnAcessoRapido() {
+                document.getElementById("ddAcessoRapido").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+                if (!event.target.matches('.b_acesso_rapido')) {
+                    var dropdowns = document.getElementsByClassName("c_acesso_rapido");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>        
+    </head>
+    <body>
+        <div class="cabecalho">
+            <div class="c_cabecalho">
+            <ul class="menu_cabecalho">
+            <li><a href="">Ir para o conteúdo¹</a></li>
+            <li><a href="">Ir para o menu²</a></li>
+            <li><a href="">Ir para a busca³</a></li>
+            <li><a href="">Ir para o rodapé⁴</a></li>
+            <li><a href="">Mapa do site</a></li>
+            <li><a href="">Alto contraste</a></li>
+            <li><a href="">Acessibilidade</a></li>
+            </ul>
+            </div>
+        </div> 
+        <div class="menu_principal">
+            <div class="c_menu_principal">
+                <div class="logo"><img src="images/logo_ufjf.png" width="71" height="64" alt="Logotipo da Universidade Federal de Juiz de Fora"></div>
+                <div class="menu_institucional">
+                <button class="b_menu_institucional"><img src="images/ico_institucional.png" width="16" height="16" alt="Institucional">&nbsp;&nbsp;Institucional</button>
+                    <div class="c_menu_institucional">
+                    <a href="">Sobre a UFJF</a>
+                    <a href="">Organização</a>
+                    <a href="">Campus Governador Valadares</a>
+                    </div>
+                </div>
+                <div class="menu_ensino">
+                <button class="b_menu_ensino"><img src="images/ico_ensino.png" width="16" height="16" alt="Ensino e pesquisa">&nbsp;&nbsp;Ensino e pesquisa</button>
+                    <div class="c_menu_ensino">
+                    <a href="">Assistência estudantil</a>
+                    <a href="">Colégio de Aplicação</a>
+                    <a href="">Graduação</a>
+                    <a href="">Pós-graduação</a>
+                    <a href="">Educação a distância</a>
+                    <a href="">A ciência que fazemos</a>
+                    </div>
+                </div>
+                <div class="menu_extensao">
+                <button class="b_menu_extensao"><img src="images/ico_extensao.png" width="16" height="16" alt="Extensão, serviços, cultura e lazer">&nbsp;&nbsp;Extensão, inovação, serviços, cultura e lazer</button>
+                    <div class="c_menu_extensao">
+                    <a href="">Carta de serviços</a>
+                    <a href="">Biblioteca</a>
+                    <a href="">Arquivo Central</a>
+                    <a href="">Critt</a>
+                    <a href="">Empresas juniores</a>
+                    <a href="">Museus e espaços culturais</a>
+                    <a href="">Centro de Ciências</a>
+                    <a href="">Jardim Botânico</a>
+                    </div>
+                </div>
+                <div class="menu_acesso">
+                <button class="b_menu_acesso"><img src="images/ico_acesso.png" width="16" height="16" alt="Acesso à informação">&nbsp;&nbsp;Acesso à informação</button>
+                    <div class="c_menu_acesso">
+                    <a href="">Observatório de dados</a>
+                    <a href="">[apurar]</a>
+                    </div>
+                </div>
+                <div class="menu_contato">
+                <button class="b_menu_contato"><img src="images/ico_contato.png" width="16" height="16" alt="Contato">&nbsp;&nbsp;Contato</button>
+                    <div class="c_menu_contato">
+                    <a href="">Comunicação Institucional</a>
+                    <a href="">Central de Atendimento</a>
+                    <a href="">Ouvidoria</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_secundario">
+            <div class="menu_secundario_a">
+                <div class="acesso_rapido">
+                <button onclick="fnAcessoRapido()" class="b_acesso_rapido">Acesso rápido</button>
+                    <div id="ddAcessoRapido" class="c_acesso_rapido">
+                        <a href="#">Calendário acadêmico</a>
+                        <a href="#">E-mail</a>
+                        <a href="#">Siga</a>
+                        <a href="#">Siga X</a>
+                        <a href="#">SEI</a>
+                        <a href="#">Biblioteca</a>
+                        <a href="#">Restaurante Universitário</a>
+                        <a href="#">Controle eletrônico</a>
+                        <a href="#">Central de Serviços</a>
+                        <a href="#">Central de Atendimento</a>
+                        <a href="#">Ouvidoria</a>
+                        <a href="#">Mapa do Campus JF</a>
+                    </div>
+                </div>
+                <div class="busca">
+                <input type="text">
+                </div>
+            </div>
+            <div class="menu_secundario_b">
+                <div class="redes">
+                <a class="abr" href="" target="_blank"><img src="images/ico_instagram.png" width="32" height="32" alt="UFJF no Instagram"></a>
+                <a class="abr" href="" target="_blank"><img src="images/ico_youtube.png" width="32" height="32" alt="UFJF no YouTube"></a>
+                <a class="abr" href="" target="_blank"><img src="images/ico_twitter.png" width="32" height="32" alt="UFJF no X"></a>
+                <a class="abr" href="" target="_blank"><img src="images/ico_facebook.png" width="32" height="32" alt="UFJF no Facebook"></a>
+                <a class="abr" href="" target="_blank"><img src="images/ico_spotify.png" width="32" height="32" alt="UFJF no Spotify"></a>
+                <a class="abr" href="" target="_blank"><img src="images/ico_tiktok.png" width="32" height="32" alt="UFJF no TikTok"></a>
+                </div>
+                <div class="international">
+                <a href="" target="_blank"><img src="images/ico_international.png" width="16" height="16" alt="Contato"> International</a>
+                </div>
+            </div>
+        </div>
+        <div class="slides">
+            <div class="t_slides">
+            <h3>One morning, when Gregor Samsa woke from troubled dreams</h3>
+            <p>He found himself transformed in his bed into a horrible vermin</p>
+            </div>
+            <div class="i_slides">
+            <img src="images/img_cinza.png" width="100%" height="340">    
+            </div>
+        </div>
+        <div class="faca_parte">
+            <div class="s_faca_parte">
+                <h2 class="h2am">Faça&nbsp;parte&nbsp;da&nbsp;UFJF!</h2><div class="mais"><a href="">+[mais]</a></div>
+            </div>
+            <div class="c_faca_parte">
+                <div class="i_faca_parte">
+                <img src="images/img_branca.png" width="100%" height="192">
+                <h3>Pism 20XX</h3>
+                He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff 
+                </div>
+                <div class="i_faca_parte">
+                <img src="images/img_branca.png" width="100%" height="192">
+                <h3>Sisu 20XX</h3>
+                He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff 
+                </div>
+                <div class="i_faca_parte">
+                <h3>Assistência estudantil</h3>
+                <h3>Graduação</h3>
+                <h3>Pós-graduação</h3>
+                <h3>Educação a distância</h3>
+                <h3>Concursos</h3>
+                </div>
+            </div>
+        </div>
+        <div class="destaques">
+            <div class="noticias">
+                <div class="s_noticias">
+                    <h2>Notícias</h2><div class="mais"><a href="">+[mais]</a></div>
+                </div>
+                <div class="c_noticias">
+                <div class="i_noticias">
+                    <img src="images/img_cinza.png" width="100%" height="192">
+                    <h4 class="e_noticias">Editoria</h4>
+                    <h3>The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
+                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    </div>
+                    <div class="i_noticias">
+                    <img src="images/img_cinza.png" width="100%" height="192">
+                    <h4 class="e_noticias">Editoria</h4>
+                    <h3>The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
+                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    </div>
+                    <div class="i_noticias">
+                    <img src="images/img_cinza.png" width="100%" height="192">
+                    <h4 class="e_noticias">Editoria</h4>
+                    <h3>The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
+                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    </div>
+                    <div class="i_noticias">
+                    <img src="images/img_cinza.png" width="100%" height="192">
+                    <h4 class="e_noticias">Editoria</h4>
+                    <h3>The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
+                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tv_ufjf">
+                <div class="s_tv_ufjf">
+                    <h2 class="h2br">TV UFJF</h2>
+                </div>
+                <div class="c_tv_ufjf">
+                    <div class="i_tv_ufjf">
+                    <img src="images/img_video.png" width="100%" height="192">
+                    <h4 class="p_tv_ufjf">Nome do programa</h4>
+                    <h3 class="h3br">The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
+                    <p class="pbr">His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    </div>
+                    <div class="i_tv_ufjf">
+                    <img src="images/img_video.png" width="100%" height="192">
+                    <h4 class="p_tv_ufjf">Nome do programa</h4>
+                    <h3 class="h3br">The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
+                    <p class="pbr">His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <div class="cultura">
+            <div class="s_cultura">
+                <h2 class="h2am">Cultura</h2><div class="mais"><a href="">+[mais]</a></div>
+            </div>
+            <div class="c_cultura">
+                <div class="i_cultura">
+                <img src="images/img_branca.png" width="100%" height="192">
+                <h4 class="l_cultura"><img src="images/ico_forum_da_cultura.png" width="24" height="24" alt="Forum da Cultura"> Forum da Cultura</h4>
+                <h3>“What’s happened to me?” he thought. It wasn’t a dream</h3>
+                <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there</p>
+                </div>
+                <div class="i_cultura">
+                <img src="images/img_branca.png" width="100%" height="192">
+                <h4 class="l_cultura"><img src="images/ico_pro-musica.png" width="24" height="24" alt="Centro Cultural Pró-Música"> Centro Cultural Pró-Música</h4>
+                <h3>“What’s happened to me?” he thought. It wasn’t a dream</h3>
+                <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there</p>
+                </div>
+            </div>
+        </div>
+        <div class="agenda">
+            <div class="s_agenda">
+                <h2 class="h2vi">Agenda</h2><div class="mais"><a href="">+[mais]</a></div>
+            </div>
+            <div class="c_agenda">
+                <div class="i_agenda">
+                <img src="images/img_cinza.png" width="100%" height="192">
+                <h4 class="d_agenda"><img src="images/ico_data.png" width="24" height="24" alt="Data"> 00/00 a 00/00</h4>
+                <h3>It showed a lady fitted out with a fur hat and fur boa who sat upright</h3>
+                <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel</p>
+                </div>
+                <div class="i_agenda">
+                <img src="images/img_cinza.png" width="100%" height="192">
+                <h4 class="d_agenda"><img src="images/ico_data.png" width="24" height="24" alt="Data"> 00/00, às 00h</h4>
+                <h3>It showed a lady fitted out with a fur hat and fur boa who sat upright</h3>
+                <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel</p>
+                </div>
+                <div class="i_agenda">
+                <img src="images/img_cinza.png" width="100%" height="192">
+                <h4 class="d_agenda"><img src="images/ico_data.png" width="24" height="24" alt="Data"> 00/00 a 00/00</h4>
+                <h3>It showed a lady fitted out with a fur hat and fur boa who sat upright</h3>
+                <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel</p>
+                </div>
+            </div>
+        </div>
+        <div class="a_ciencia">
+            <div class="s_a_ciencia">
+                <h2 class="h2am">A&nbsp;ciência&nbsp;que&nbsp;fazemos</h2><div class="mais"><a href="">+[mais]</a></div>
+            </div>
+            <div class="c_a_ciencia">
+                <div class="i_a_ciencia">
+                <img src="images/img_branca.png" width="100%" height="192">
+                <br>
+                <h3>“How about if I sleep a little bit longer and forget all this nonsense”, he thought</h3>
+                <p>But that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn’t get into that</p>
+                </div>
+                <div class="i_a_ciencia">
+                <img src="images/img_branca.png" width="100%" height="192">
+                <br>
+                <h3>“How about if I sleep a little bit longer and forget all this nonsense”, he thought</h3>
+                <p>But that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn’t get into that</p>
+                </div>
+                <div class="i_a_ciencia">
+                <h3>Visita às escolas</h3>
+                <p>But that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn’t get into that</p>
+                <br>
+                <h3>Revista A3</h3>
+                <p>But that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn’t get into that</p>
+                </div>
+            </div>
+        </div>
+        <div class="acoes_com">
+            <div class="s_acoes_com">
+                <h2 class="h2vi">Ações&nbsp;com&nbsp;a&nbsp;comunidade</h2><div class="mais"><a href="">+[mais]</a></div>
+            </div>
+            <div class="c_acoes_com">
+                <div class="i_acoes_com">
+                <img src="images/img_cinza.png" width="100%" height="192">
+                <br>
+                <h3>Intecoop</h3>
+                <p>He must have tried it a hundred times, shut his eyes so that he wouldn’t have to look at the floundering legs, and only stopped when</p>
+                </div>
+                <div class="i_acoes_com">
+                <img src="images/img_cinza.png" width="100%" height="192">
+                <br>
+                <h3>Empresas juniores</h3>
+                <p>He must have tried it a hundred times, shut his eyes so that he wouldn’t have to look at the floundering legs, and only stopped when</p>
+                </div>
+                <div class="i_acoes_com">
+                <h3>Esporte e lazer</h3>
+                <h3>Serviços de saúde</h3>
+                <h3>Assessoramento</h3>
+                <h3>Centro de Ciências</h3>
+                <h3>Jardim Botânico</h3>
+                </div>
+                </div>
+        </div>
+        <div class="inovacao">
+            <div class="s_inovacao">
+                <h2 class="h2am">Inovação</h2><div class="mais"><a href="">+[mais]</a></div>
+            </div>
+            <div class="c_inovacao">
+                <div class="i_inovacao">
+                <img src="images/img_branca.png" width="100%" height="192">
+                <h3>Critt</h3>
+                <p>“Oh, God”, he thought, “what a strenuous career it is that I’ve chosen! Travelling day in and day out</p>
+                </div>
+                <div class="i_inovacao">
+                <img src="images/img_branca.png" width="100%" height="192">
+                <br>
+                <h3>Parque Tecnológico</h3>
+                <p>“Oh, God”, he thought, “what a strenuous career it is that I’ve chosen! Travelling day in and day out</p>
+                </div>
+                <div class="i_inovacao">
+                <h3>Radar de oportunidades</h3>
+                <p>“Oh, God”, he thought, “what a strenuous career it is that I’ve chosen! Travelling day in and day out</p>
+                <br>
+                <h3>Qualificação</h3>
+                <p>“Oh, God”, he thought, “what a strenuous career it is that I’ve chosen! Travelling day in and day out</p>
+                </div>
+            </div>
+        </div>
+            <div class="minha_ufjf">
+            <div class="s_minha_ufjf">
+                <h2 class="h2br">Minha&nbsp;UFJF</h2>
+            </div>
+            <div class="c_minha_ufjf">
+                <div class="i_minha_ufjf">
+                <h3 class="h3br"><img src="images/ico_calendario.png" width="24" height="24" alt="Calendário acadêmico"> Calendário acadêmico</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                <br>
+                <h3 class="h3br"><img src="images/ico_e-mail.png" width="24" height="24" alt="E-mail"> E-mail</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                <br>
+                <h3 class="h3br"><img src="images/ico_siga.png" width="24" height="24" alt="Siga"> Siga</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                <br>
+                <h3 class="h3br"><img src="images/ico_sigax.png" width="24" height="24" alt="Siga X"> Siga X</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                </div>
+                <div class="i_minha_ufjf">
+                <h3 class="h3br"><img src="images/ico_sei.png" width="24" height="24" alt="SEI"> SEI</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                <br>
+                <h3 class="h3br"><img src="images/ico_biblioteca.png" width="24" height="24" alt="Biblioteca"> Biblioteca</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                <br>
+                <h3 class="h3br"><img src="images/ico_restaurante.png" width="24" height="24" alt="Restaurante Universitário"> Restaurante Universitário</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                <br>
+                <h3 class="h3br"><img src="images/ico_controle.png" width="24" height="24" alt="Controle eletrônico"> Controle eletrônico</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                </div>
+                <div class="i_minha_ufjf">
+                <h3 class="h3br"><img src="images/ico_servicos.png" width="24" height="24" alt="Central de Serviços"> Central de Serviços</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                <br>
+                <h3 class="h3br"><img src="images/ico_atendimento.png" width="24" height="24" alt="Central de Atendimento"> Central de Atendimento</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                <br>
+                <h3 class="h3br"><img src="images/ico_ouvidoria.png" width="24" height="24" alt="Ouvidoria"> Ouvidoria</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                <br>
+                <h3 class="h3br"><img src="images/ico_mapa.png" width="24" height="24" alt="Mapa do campus JF"> Mapa do campus JF</h3>
+                <p class="pbr">Doing business like this takes much more effort than doing your own business at home, and on top of that there’s the curse</p>
+                </div>
+            </div>
+        </div>
+        <div class="rodape">
+            <div class="c_rodape">
+                <div class="endereco">
+                <p class="pbr">
+                <b>Universidade Federal de Juiz de Fora</b>
+                <br>
+                Rua José Lourenço Kelmer, s/n - Campus Universitário
+                <br>
+                Bairro São Pedro
+                <br>
+                CEP: 36036-900 – Juiz de Fora – MG
+                </p>
+                </div>
+                <div class="contato">
+                <a class="abr" href="" target="_blank"><img src="images/ico_instagram.png" width="32" height="32" alt="UFJF no Instagram"></a>
+                <a class="abr" href="" target="_blank"><img src="images/ico_youtube.png" width="32" height="32" alt="UFJF no YouTube"></a>
+                <a class="abr" href="" target="_blank"><img src="images/ico_twitter.png" width="32" height="32" alt="UFJF no X"></a>
+                <a class="abr" href="" target="_blank"><img src="images/ico_facebook.png" width="32" height="32" alt="UFJF no Facebook"></a>
+                <a class="abr" href="" target="_blank"><img src="images/ico_spotify.png" width="32" height="32" alt="UFJF no Spotify"></a>
+                <a class="abr" href="" target="_blank"><img src="images/ico_tiktok.png" width="32" height="32" alt="UFJF no TikTok"></a>
+                <p class="pbr">
+                <a class="abr" href="" target="_blank">Central de atendimento</a>
+                <br>
+                <a class="abr" href="" target="_blank">Ouvidoria</a>
+                </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
