@@ -8,25 +8,41 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <script>
-                function fnAcessoRapido() {
-                document.getElementById("ddAcessoRapido").classList.toggle("show");
-            }
-            window.onclick = function(event) {
-                if (!event.target.matches('.b_acesso_rapido')) {
-                    var dropdowns = document.getElementsByClassName("c_acesso_rapido");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                    }
-                }
-            }
-        </script>        
     </head>
     <body>
+    <script>
+        function fnAcessoRapido() {
+            document.getElementById("ddAcessoRapido").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.b_acesso_rapido')) {
+            var dropdowns = document.getElementsByClassName("c_acesso_rapido");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+        </script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
         <div class="cabecalho">
             <div class="c_cabecalho">
             <ul class="menu_cabecalho">
@@ -63,7 +79,7 @@
                     </div>
                 </div>
                 <div class="menu_extensao">
-                <button class="b_menu_extensao"><img src="images/ico_extensao.png" width="16" height="16" alt="Extensão, serviços, cultura e lazer">&nbsp;&nbsp;Extensão, inovação, serviços, cultura e lazer</button>
+                <button class="b_menu_extensao"><img src="images/ico_extensao.png" width="16" height="16" alt="Extensão, cultura e inovação">&nbsp;&nbsp;Extensão, cultura e inovação</button>
                     <div class="c_menu_extensao">
                     <a href="">Carta de serviços</a>
                     <a href="">Biblioteca</a>
@@ -92,23 +108,89 @@
                 </div>
             </div>
         </div>
+        <div class="menu_mobile">
+        <button class="accordion">
+        <img src="images/ico_institucional.png" width="16" height="16" alt="Institucional">&nbsp;&nbsp;Institucional
+        </button>
+            <div class="panel">
+            <a href="">Sobre a UFJF</a>
+            <br>
+            <a href="">Organização</a>
+            <br>
+            <a href="">Campus Governador Valadares</a>
+            </div>
+        <button class="accordion">
+        <img src="images/ico_ensino.png" width="16" height="16" alt="Ensino e pesquisa">&nbsp;&nbsp;Ensino e pesquisa
+        </button>
+            <div class="panel">
+            <a href="">Assistência estudantil</a>
+            <br>
+            <a href="">Colégio de Aplicação</a>
+            <br>
+            <a href="">Graduação</a>
+            <br>
+            <a href="">Pós-graduação</a>
+            <br>
+            <a href="">Educação a distância</a>
+            <br>
+            <a href="">A ciência que fazemos</a>
+            </div>
+        <button class="accordion">
+        <img src="images/ico_extensao.png" width="16" height="16" alt="Extensão, cultura e inovação">&nbsp;&nbsp;Extensão, cultura e inovação
+        </button>
+            <div class="panel">
+            <a href="">Carta de serviços</a>
+            <br>
+            <a href="">Biblioteca</a>
+            <br>
+            <a href="">Arquivo Central</a>
+            <br>
+            <a href="">Critt</a>
+            <br>
+            <a href="">Empresas juniores</a>
+            <br>
+            <a href="">Museus e espaços culturais</a>
+            <br>
+            <a href="">Centro de Ciências</a>
+            <br>
+            <a href="">Jardim Botânico</a>
+            </div>
+        <button class="accordion">
+        <img src="images/ico_acesso.png" width="16" height="16" alt="Acesso à informação">&nbsp;&nbsp;Acesso à informação
+        </button>
+            <div class="panel">
+            <a href="">Observatório de dados</a>
+            <br>
+            <a href="">[apurar]</a>
+            </div>
+        <button class="accordion">
+        <img src="images/ico_contato.png" width="16" height="16" alt="Contato">&nbsp;&nbsp;Contato
+        </button>
+            <div class="panel">
+            <a href="">Comunicação Institucional</a>
+            <br>
+            <a href="">Central de Atendimento</a>
+            <br>
+            <a href="">Ouvidoria</a>
+            </div>
+        </div>
         <div class="menu_secundario">
             <div class="menu_secundario_a">
                 <div class="acesso_rapido">
                 <button onclick="fnAcessoRapido()" class="b_acesso_rapido">Acesso rápido</button>
                     <div id="ddAcessoRapido" class="c_acesso_rapido">
-                        <a href="#">Calendário acadêmico</a>
+                        <a href="#">Calendário&nbsp;acadêmico</a>
                         <a href="#">E-mail</a>
                         <a href="#">Siga</a>
                         <a href="#">Siga X</a>
                         <a href="#">SEI</a>
                         <a href="#">Biblioteca</a>
-                        <a href="#">Restaurante Universitário</a>
-                        <a href="#">Controle eletrônico</a>
-                        <a href="#">Central de Serviços</a>
-                        <a href="#">Central de Atendimento</a>
+                        <a href="#">Restaurante&nbsp;Universitário</a>
+                        <a href="#">Controle&nbsp;eletrônico</a>
+                        <a href="#">Central&nbsp;de&nbsp;Serviços</a>
+                        <a href="#">Central&nbsp;de&nbsp;Atendimento</a>
                         <a href="#">Ouvidoria</a>
-                        <a href="#">Mapa do Campus JF</a>
+                        <a href="#">Mapa&nbsp;do&nbsp;Campus JF</a>
                     </div>
                 </div>
                 <div class="busca">
@@ -146,12 +228,12 @@
                 <div class="i_faca_parte">
                 <img src="images/img_branca.png" width="100%" height="192">
                 <h3>Pism 20XX</h3>
-                He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff 
+                He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed 
                 </div>
                 <div class="i_faca_parte">
                 <img src="images/img_branca.png" width="100%" height="192">
                 <h3>Sisu 20XX</h3>
-                He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff 
+                He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed 
                 </div>
                 <div class="i_faca_parte">
                 <h3>Assistência estudantil</h3>
@@ -171,26 +253,26 @@
                 <div class="i_noticias">
                     <img src="images/img_cinza.png" width="100%" height="192">
                     <h4 class="e_noticias">Editoria</h4>
-                    <h3>The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
-                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    <h3>The bedding was hardly able to cover it and seemed ready</h3>
+                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly</p>
                     </div>
                     <div class="i_noticias">
                     <img src="images/img_cinza.png" width="100%" height="192">
                     <h4 class="e_noticias">Editoria</h4>
-                    <h3>The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
-                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    <h3>The bedding was hardly able to cover it and seemed ready</h3>
+                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly</p>
                     </div>
                     <div class="i_noticias">
                     <img src="images/img_cinza.png" width="100%" height="192">
                     <h4 class="e_noticias">Editoria</h4>
-                    <h3>The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
-                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    <h3>The bedding was hardly able to cover it and seemed ready</h3>
+                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly</p>
                     </div>
                     <div class="i_noticias">
                     <img src="images/img_cinza.png" width="100%" height="192">
                     <h4 class="e_noticias">Editoria</h4>
-                    <h3>The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
-                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    <h3>The bedding was hardly able to cover it and seemed ready</h3>
+                    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly</p>
                     </div>
                 </div>
             </div>
@@ -202,14 +284,14 @@
                     <div class="i_tv_ufjf">
                     <img src="images/img_video.png" width="100%" height="192">
                     <h4 class="p_tv_ufjf">Nome do programa</h4>
-                    <h3 class="h3br">The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
-                    <p class="pbr">His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    <h3 class="h3br">The bedding was hardly able to cover it and seemed ready</h3>
+                    <p class="pbr">His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly</p>
                     </div>
                     <div class="i_tv_ufjf">
                     <img src="images/img_video.png" width="100%" height="192">
                     <h4 class="p_tv_ufjf">Nome do programa</h4>
-                    <h3 class="h3br">The bedding was hardly able to cover it and seemed ready to slide off any moment</h3>
-                    <p class="pbr">His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked</p>
+                    <h3 class="h3br">The bedding was hardly able to cover it and seemed ready</h3>
+                    <p class="pbr">His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly</p>
                     </div>
                 </div>            
             </div>
@@ -223,13 +305,13 @@
                 <img src="images/img_branca.png" width="100%" height="192">
                 <h4 class="l_cultura"><img src="images/ico_forum_da_cultura.png" width="24" height="24" alt="Forum da Cultura"> Forum da Cultura</h4>
                 <h3>“What’s happened to me?” he thought. It wasn’t a dream</h3>
-                <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there</p>
+                <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table</p>
                 </div>
                 <div class="i_cultura">
                 <img src="images/img_branca.png" width="100%" height="192">
                 <h4 class="l_cultura"><img src="images/ico_pro-musica.png" width="24" height="24" alt="Centro Cultural Pró-Música"> Centro Cultural Pró-Música</h4>
                 <h3>“What’s happened to me?” he thought. It wasn’t a dream</h3>
-                <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there</p>
+                <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table</p>
                 </div>
             </div>
         </div>
@@ -242,19 +324,19 @@
                 <img src="images/img_cinza.png" width="100%" height="192">
                 <h4 class="d_agenda"><img src="images/ico_data.png" width="24" height="24" alt="Data"> 00/00 a 00/00</h4>
                 <h3>It showed a lady fitted out with a fur hat and fur boa who sat upright</h3>
-                <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel</p>
+                <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane</p>
                 </div>
                 <div class="i_agenda">
                 <img src="images/img_cinza.png" width="100%" height="192">
                 <h4 class="d_agenda"><img src="images/ico_data.png" width="24" height="24" alt="Data"> 00/00, às 00h</h4>
                 <h3>It showed a lady fitted out with a fur hat and fur boa who sat upright</h3>
-                <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel</p>
+                <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane</p>
                 </div>
                 <div class="i_agenda">
                 <img src="images/img_cinza.png" width="100%" height="192">
                 <h4 class="d_agenda"><img src="images/ico_data.png" width="24" height="24" alt="Data"> 00/00 a 00/00</h4>
                 <h3>It showed a lady fitted out with a fur hat and fur boa who sat upright</h3>
-                <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel</p>
+                <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane</p>
                 </div>
             </div>
         </div>
@@ -266,21 +348,21 @@
                 <div class="i_a_ciencia">
                 <img src="images/img_branca.png" width="100%" height="192">
                 <br>
-                <h3>“How about if I sleep a little bit longer and forget all this nonsense”, he thought</h3>
-                <p>But that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn’t get into that</p>
+                <h3>“How about if I sleep a little bit longer and forget all this nonsense”</h3>
+                <p>But that was something he was unable to do because he was used to sleeping on his right</p>
                 </div>
                 <div class="i_a_ciencia">
                 <img src="images/img_branca.png" width="100%" height="192">
                 <br>
-                <h3>“How about if I sleep a little bit longer and forget all this nonsense”, he thought</h3>
-                <p>But that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn’t get into that</p>
+                <h3>“How about if I sleep a little bit longer and forget all this nonsense”</h3>
+                <p>But that was something he was unable to do because he was used to sleeping on his right</p>
                 </div>
                 <div class="i_a_ciencia">
                 <h3>Visita às escolas</h3>
-                <p>But that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn’t get into that</p>
+                <p>But that was something he was unable to do because he was used to sleeping on his right</p>
                 <br>
                 <h3>Revista A3</h3>
-                <p>But that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn’t get into that</p>
+                <p>But that was something he was unable to do because he was used to sleeping on his right</p>
                 </div>
             </div>
         </div>
@@ -293,13 +375,13 @@
                 <img src="images/img_cinza.png" width="100%" height="192">
                 <br>
                 <h3>Intecoop</h3>
-                <p>He must have tried it a hundred times, shut his eyes so that he wouldn’t have to look at the floundering legs, and only stopped when</p>
+                <p>He must have tried it a hundred times, shut his eyes so that he wouldn’t have to look</p>
                 </div>
                 <div class="i_acoes_com">
                 <img src="images/img_cinza.png" width="100%" height="192">
                 <br>
                 <h3>Empresas juniores</h3>
-                <p>He must have tried it a hundred times, shut his eyes so that he wouldn’t have to look at the floundering legs, and only stopped when</p>
+                <p>He must have tried it a hundred times, shut his eyes so that he wouldn’t have to look</p>
                 </div>
                 <div class="i_acoes_com">
                 <h3>Esporte e lazer</h3>

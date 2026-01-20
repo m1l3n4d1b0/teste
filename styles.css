@@ -9,6 +9,10 @@ body {
     color: #000000;
 }
 
+img {
+    object-fit: cover;
+}
+
 
 /* ESTILOS DE TEXTO: INÍCIO */ 
 
@@ -146,7 +150,7 @@ a:active {
 
 .c_cabecalho {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -188,15 +192,26 @@ a:active {
     margin: 0;
     padding: 0;
     background-color: #a01536;
+    display: none;
+}
+
+@media screen and (min-width: 960px) {
+    .menu_principal {
+        display: block;
+    }
 }
 
 .c_menu_principal {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: max-content max-content max-content max-content max-content max-content;
     width: "100%";
-    max-width: 1280px;
+    max-width: 1024px;
     margin: auto;
     padding: 32px;
+}
+
+.logo {
+    padding-right: 16px;    
 }
 
 .menu_institucional {
@@ -447,12 +462,71 @@ a:active {
 /* MENU PRINCIPAL: FIM */
 
 
+/* MENU MOBILE: INÍCIO */
+
+.menu_mobile {
+    margin: 0;
+    padding: 0;
+    background-color: #a01536;
+    display: block;
+}
+
+@media screen and (min-width: 960px) {
+    .menu_mobile {
+        display: none;
+    }
+}
+
+.accordion {
+    width: 100%;
+    padding: 0 32px;
+    border: none;
+    outline: none;
+    background-color: #a01536;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.active, .accordion:hover {
+    background-color: rgba(0,0,0,0.25); 
+}
+
+.panel {
+    display: none;
+    width: 100%;
+    background-color: #212121;
+    padding: 16px 32px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    overflow: hidden;
+}
+
+.panel a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.panel a:hover {
+    text-decoration: underline;
+}
+
+/* MENU MOBILE: FIM */
+
+
 /* MENU SECUNDÁRIO: INÍCIO */
 
 .menu_secundario {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: 1fr 1fr;
     margin: auto;
     padding: 32px 0 0 0;
@@ -558,7 +632,7 @@ input[type=text]:focus {
 .slides {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     padding: 0;
@@ -596,7 +670,7 @@ input[type=text]:focus {
 .s_faca_parte {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: max-content auto;
     margin: auto;
     padding: 0;
@@ -605,7 +679,7 @@ input[type=text]:focus {
 .c_faca_parte {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     padding: 0;
@@ -624,7 +698,7 @@ input[type=text]:focus {
 .destaques {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     padding: 0;
@@ -698,7 +772,7 @@ input[type=text]:focus {
 .s_cultura {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: max-content auto;
     margin: auto;
     padding: 0;
@@ -707,7 +781,7 @@ input[type=text]:focus {
 .c_cultura {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: 1fr 1fr;
     margin: auto;
     padding: 0;
@@ -739,7 +813,7 @@ input[type=text]:focus {
 .s_agenda {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: max-content auto;
     margin: auto;
     padding: 0;
@@ -748,7 +822,7 @@ input[type=text]:focus {
 .c_agenda {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     padding: 0;
@@ -780,7 +854,7 @@ input[type=text]:focus {
 .s_a_ciencia {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: max-content auto;
     margin: auto;
     padding: 0;
@@ -789,7 +863,7 @@ input[type=text]:focus {
 .c_a_ciencia {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     padding: 0;
@@ -817,7 +891,7 @@ input[type=text]:focus {
 .s_acoes_com {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: max-content auto;
     margin: auto;
     padding: 0;
@@ -826,7 +900,7 @@ input[type=text]:focus {
 .c_acoes_com {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     padding: 0;
@@ -854,7 +928,7 @@ input[type=text]:focus {
 .s_inovacao {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: max-content auto;
     margin: auto;
     padding: 0;
@@ -863,7 +937,7 @@ input[type=text]:focus {
 .c_inovacao {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     padding: 0;
@@ -890,7 +964,7 @@ input[type=text]:focus {
 
 .s_minha_ufjf {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     margin: auto;
     padding: 0;
 }
@@ -898,7 +972,7 @@ input[type=text]:focus {
 .c_minha_ufjf {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     padding: 0;
@@ -926,7 +1000,7 @@ input[type=text]:focus {
 .c_rodape {
     display: grid;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     grid-template-columns: auto auto;
     margin: auto;
     padding: 0;
